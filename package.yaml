@@ -1,0 +1,34 @@
+name:                hskv
+version:             0.1.0.0
+#synopsis:
+#description:
+homepage:            https://github.com/Solonarv/hskv#readme
+license:             MIT
+author:              Nicolas Stamm
+maintainer:          nstamm@gmx.de
+copyright:           2017 Nicolas Stamm
+category:            misc
+extra-source-files:
+- README.md
+
+dependencies:
+  - base >= 4.7 && < 5
+  - unordered-containers
+  - text
+  - megaparsec
+  - bytestring
+  - containers
+  - filepath
+  - mtl
+
+library:
+  source-dirs:      src
+
+default-extensions:
+  - LambdaCase
+  - PatternSynonyms
+  - GeneralizedNewtypeDeriving
+  - DeriveFunctor
+  - DeriveFoldable
+  - DeriveTraversable
+  - ScopedTypeVariables
