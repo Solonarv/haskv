@@ -214,6 +214,9 @@ columns: 80
 # Default: native.
 newline: native
 
+
+_package_yaml: !include "./package.yaml"
+
 # Sometimes, language extensions are specified in a cabal file or from the
 # command line instead of using language pragmas in the file. stylish-haskell
 # needs to be aware of these, so it can parse the file correctly.
@@ -222,5 +225,15 @@ newline: native
 language_extensions:
   - LambdaCase
   - PatternSynonyms
+  - GeneralizedNewtypeDeriving
+  - DeriveFunctor
+  - DeriveFoldable
+  - DeriveTraversable
   - ScopedTypeVariables
+  - GADTs
+  - TypeFamilies
+  - RankNTypes
+  - ViewPatterns
+  - TypeApplications
   # - QuasiQuotes
+
